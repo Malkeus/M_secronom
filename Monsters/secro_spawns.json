@@ -1,0 +1,59 @@
+[
+ {
+    "type":"monstergroup",
+    "name" : "GROUP_ZOMBIE",
+    "default" : "mon_zombie",
+    "monsters" : [
+      { "monster" : "mon_zombie_swarmer_weak", "freq" : 1, "cost_multiplier": 7, "pack_size": [5,10]},
+      { "monster" : "mon_zombie_swarmer_segway", "freq" : 1, "cost_multiplier": 13, "pack_size": [5,10]},
+      { "monster" : "mon_zombie_swarmer_weak", "freq" : 1, "cost_multiplier": 13, "pack_size": [15,20]},
+      { "monster" : "mon_zombie_swarmer_weak", "freq" : 1, "cost_multiplier": 20, "pack_size": [25,30]},
+      { "monster" : "mon_zombie_blade", "freq" : 10, "cost_multiplier": 2},
+      { "monster" : "mon_zombie_spoder", "freq" : 20, "cost_multiplier": 2, "pack_size": [1,2]},
+      { "monster" : "mon_zombie_tendrils", "freq" : 15, "cost_multiplier": 2},
+      { "monster" : "mon_zombie_mouth", "freq" : 10, "cost_multiplier": 2},
+      { "monster" : "mon_zombie_translucent", "freq" : 5, "cost_multiplier": 2}
+    ],
+    "replace_monster_group" : true,
+    "new_monster_group_id" : "GROUP_ZOMBIE_MID",
+    "replacement_time" : 14, "//" : "(replacement_time * difficulty)DAYS *(SEASON_LENGTH / 14)"
+  },
+  {
+    "type":"monstergroup",
+    "name" : "GROUP_ZOMBIE_MID",
+    "default" : "mon_zombie_tough",
+    "monsters" : [
+      { "monster" : "mon_zombie_swarmer_segway", "freq" : 1, "cost_multiplier": 6, "pack_size": [5,10]},
+      { "monster" : "mon_zombie_swarmer_weak", "freq" : 10, "cost_multiplier": 12, "pack_size": [30,50], "//": "You want something hard, right?"},
+      { "monster" : "mon_zombie_blade", "freq" : 15, "cost_multiplier": 2, "pack_size": [1,2]},
+      { "monster" : "mon_zombie_spoder", "freq" : 30, "cost_multiplier": 2, "pack_size": [1,4]},
+      { "monster" : "mon_zombie_tendrils", "freq" : 25, "cost_multiplier": 2, "pack_size": [1,3]},
+      { "monster" : "mon_zombie_mouth", "freq" : 15, "cost_multiplier": 2, "pack_size": [1,2]},
+      { "monster" : "mon_zombie_translucent", "freq" : 10, "cost_multiplier": 2, "pack_size": [1,2]}
+    ]
+  },
+  
+  
+  {
+    "type":"monstergroup",
+    "name" : "GROUP_LAB",
+    "default" : "mon_zombie_scientist",
+    "monsters" : [
+      { "monster" : "mon_zombie_sxz84", "freq" : 100, "cost_multiplier" : 1},
+      { "monster" : "mon_zombie_sxz92", "freq" : 100, "cost_multiplier" : 1},
+      { "monster" : "mon_zombie_sxz65", "freq" : 100, "cost_multiplier" : 1},
+      { "monster" : "mon_zombie_sxz117", "freq" : 100, "cost_multiplier" : 1}
+    ]
+  },
+  {
+    "type":"monstergroup",
+    "name" : "GROUP_ICE_LAB",
+    "default" : "mon_zombie_scientist",
+    "monsters" : [
+      { "monster" : "mon_zombie_sxz84", "freq" : 100, "cost_multiplier" : 1},
+      { "monster" : "mon_zombie_sxz92", "freq" : 100, "cost_multiplier" : 1},
+      { "monster" : "mon_zombie_sxz65", "freq" : 100, "cost_multiplier" : 1},
+      { "monster" : "mon_zombie_sxz117", "freq" : 100, "cost_multiplier" : 1}
+    ]
+  }
+]
