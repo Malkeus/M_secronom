@@ -1,0 +1,209 @@
+[
+ {
+    "//" : "Still a brute upgrades.",
+    "type":"monstergroup",
+    "name" : "GROUP_ZOMBIE_BRUTE",
+    "default" : "mon_zombie_brute",
+    "monsters" : [
+      { "monster" : "mon_zombie_brute_grappler", "freq" : 33, "cost_multiplier" : 10 },
+      { "monster" : "mon_zombie_brute_ninja", "freq" : 16, "cost_multiplier" : 10 },
+      { "monster" : "mon_zombie_hulk", "freq" : 1, "cost_multiplier" : 50 },
+      { "monster" : "mon_zombie_titan", "freq" : 1, "cost_multiplier" : 50 }
+    ]
+    },
+    {
+    "type":"monstergroup",
+    "name" : "GROUP_ZOMBIE_UPGRADE",
+    "default" : "mon_zombie_spitter",
+    "monsters" : [
+      { "monster" : "mon_zombie_grabber", "freq" : 10, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_grappler", "freq" : 30, "cost_multiplier" : 7 },
+      { "monster" : "mon_zombie_hunter", "freq" : 20, "cost_multiplier" : 5 },
+      { "monster" : "mon_skeleton", "freq" : 30, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_smoker", "freq" : 10, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_shady", "freq" : 10, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_gasbag", "freq" : 10, "cost_multiplier": 5},
+      { "monster" : "mon_zombie_biter", "freq" : 10, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_shrieker", "freq" : 30, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_spitter", "freq" : 40, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_necro", "freq" : 5, "cost_multiplier" : 25 },
+      { "monster" : "mon_boomer", "freq" : 30, "cost_multiplier" : 5 },
+      { "monster" : "mon_boomer_huge", "freq" : 20, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_brute", "freq" : 15, "cost_multiplier" : 15 },
+      { "monster" : "mon_zombie_hulk", "freq" : 0, "cost_multiplier" : 50 },
+      { "monster" : "mon_zombie_master", "freq" : 1, "cost_multiplier" : 30 },
+      { "monster" : "mon_zombie_corrosive", "freq" : 10, "cost_multiplier" : 7 },
+      { "monster" : "mon_zombie_hollow", "freq" : 2, "cost_multiplier" : 10 },
+      { "monster" : "mon_zombie_predator", "freq" : 5, "cost_multiplier" : 10 },
+      { "monster" : "mon_zombie_blade", "freq" : 10, "cost_multiplier" : 8 },
+      { "monster" : "mon_zombie_tendrils", "freq" : 10, "cost_multiplier" : 8 },
+      { "monster" : "mon_zombie_spoder", "freq" : 10, "cost_multiplier" : 8 },
+      { "monster" : "mon_zombie_mouth", "freq" : 10, "cost_multiplier" : 8 },
+      { "monster" : "mon_zombie_translucent", "freq" : 10, "cost_multiplier" : 8 }
+    ]
+  },
+  
+  
+  
+  {
+    "name": "GROUP_SWARMERSEGWAY_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_translucent", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_mouth", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_tendrils", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_spoder", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_blade", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_SWARMER1_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_pesky", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_screamer", "freq": 1, "cost_multiplier": 3 },
+      { "monster": "mon_zombie_swarmer_stout", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_moderate", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_SWARMER2_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_mischievous", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_shrill", "freq": 1, "cost_multiplier": 3 },
+      { "monster": "mon_zombie_swarmer_vigor", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_strong", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_SWARMER3_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_lick", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_grubby", "freq": 1, "cost_multiplier": 3 },
+      { "monster": "mon_zombie_swarmer_rugged", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_evo_unify", "freq": 1, "cost_multiplier": 2 },
+      { "monster": "mon_zombie_swarmer_evo_hungry", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_SWARMER4_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_slick", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_slimy", "freq": 1, "cost_multiplier": 3 },
+      { "monster": "mon_zombie_swarmer_scraped", "freq": 1, "cost_multiplier": 2 }
+    ]
+  },
+  
+  
+  
+  {
+    "name": "GROUP_EZTARVING_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_evo_savage", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_swarmer_evo_virulent", "freq": 1, "cost_multiplier": 4 },
+      { "monster": "mon_zombie_swarmer_evo_skilled", "freq": 1, "cost_multiplier": 10 }
+    ]
+  },
+  {
+    "name": "GROUP_EZNITY_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_evo_ascension", "freq": 1, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_swarmer_evo_resurrector", "freq": 1, "cost_multiplier": 15 },
+      { "monster": "mon_zombie_swarmer_evo_unity", "freq": 1, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "name": "GROUP_EZCRAPED_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_metalwreck", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_excruciating", "freq": 1, "cost_multiplier": 5 }
+    ]
+  },
+  {
+    "name": "GROUP_EZLIMY_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_slender", "freq": 1, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_swarmer_tenacious", "freq": 1, "cost_multiplier": 3 }
+    ]
+  },
+  {
+    "name": "GROUP_EZLICK_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_swarmer_pestilent", "freq": 1, "cost_multiplier": 1 }
+    ]
+  },
+    
+    
+    
+ {
+    "name": "GROUP_TENDRILS_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_thicktendrils", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_tendricles", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_BLADED_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_sharpblade", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_serratedblade", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_TITAN_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_blacktitan", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_ZSPIDER_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_spoderhug", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_spodertickle", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_MOUTH_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_bellymouth", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_omouth", "freq": 1, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_TRANSLUCENT_UPGRADE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_pellucid", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_distended", "freq": 1, "cost_multiplier": 0 }
+    ]
+  }
+]

@@ -1,0 +1,1182 @@
+[
+ {
+    "//": "This is my zombie, planned to be the deadliest troop. Overpowered as a team, filthy when alone.",
+    "//": "5+ years will end the upgrade path, from tier 1 to 6", 
+    "id": "mon_zombie_swarmer_weak",
+    "type": "MONSTER",
+    "name": "swarmer zombie",
+    "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 0,
+    "size": "MEDIUM",
+    "hp": 40,
+    "speed": 80,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 25
+      },
+      [ "GRAB", 40 ],
+      [ "scratch", 32 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 8,
+      "into_group": "GROUP_SWARMER1_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_segway",
+    "type": "MONSTER",
+    "name": "swarmer zombie",
+    "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 0,
+    "size": "MEDIUM",
+    "hp": 40,
+    "speed": 70,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 25
+      },
+      [ "GRAB", 40 ],
+      [ "scratch", 32 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 8,
+      "into_group": "GROUP_SWARMERSEGWAY_UPGRADE",
+      "//": "Particularly, normal zombie upgrade is very time wasting. This zombie stays with other swarmer types, difference is, it will upgrade into mutated ones."
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+  },
+  
+  
+  
+  {
+    "//": "From here, tier 2 swarmers now gain their ideal characteristics.",
+    "id": "mon_zombie_swarmer_moderate",
+    "type": "MONSTER",
+    "name": "swarmer zombie",
+    "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 4,
+    "size": "MEDIUM",
+    "hp": 65,
+    "speed": 85,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 3,
+    "melee_dice_sides": 2,
+    "melee_cut": 3,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 22
+      },
+      [ "GRAB", 43 ],
+      [ "scratch", 37 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 9,
+      "into_group": "GROUP_SWARMER2_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_stout",
+    "type": "MONSTER",
+    "name": "stout swarmer zombie",
+    "description": "A human body of a thug, with its arms buffed in torn muscles. The sharp stare on its face notifies its excitement for flesh.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 10,
+    "size": "MEDIUM",
+    "hp": 80,
+    "speed": 75,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green_white",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 3,
+    "melee_cut": 1,
+    "armor_cut": 3,
+    "armor_bash": 4,
+    "armor_stab": 2,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 17
+      },
+      [ "GRAB", 35 ],
+      [ "scratch", 40 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 9,
+      "into_group": "GROUP_SWARMER2_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_screamer",
+    "type": "MONSTER",
+    "name": "screamer swarm zombie",
+    "description": "A teenage girly human body, with both chest and mouth expanded while saggy skin lies before it. Looks awful, but worst once it lets off its voice.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 8,
+    "size": "MEDIUM",
+    "hp": 45,
+    "speed": 50,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green_cyan",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "armor_cut": 1,
+    "armor_bash": 2,
+    "armor_stab": 1,
+    "special_attacks": [
+      [ "SHRIEK", 40 ],
+      [ "swarmscreamer_shout", 30 ]
+    ],
+    "path_settings": { "max_dist": 20 },
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 9,
+      "into_group": "GROUP_SWARMER2_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_pesky",
+    "type": "MONSTER",
+    "name": "pesky swarmer zombie",
+    "description": "With awkward back-and-forth cartwheels, this childish humanoid seems to retain its joyful side while it was alive, as you can see on its face is a prominent smile.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 5,
+    "size": "SMALL",
+    "hp": 40,
+    "speed": 105,
+    "material": [ "flesh" ],
+    "symbol": "z",
+    "color": "light_green_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
+    "armor_cut": 1,
+    "armor_bash": 1,
+    "armor_stab": 2,
+    "dodge": 3,
+    "special_attacks": [
+      [ "scratch", 12 ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "default_zombie_clothes", 100 ],
+        [ "child_items", 65 ]
+      ]
+    },
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 9,
+      "into_group": "GROUP_SWARMER2_UPGRADE"
+     },
+    "flags": [ "SEES", "HIT_AND_RUN", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GUILT" ]
+  },
+  
+  
+  
+  {
+    "//": "From here, tier 3 swarmers now strengthens.",
+    "id": "mon_zombie_swarmer_strong",
+    "type": "MONSTER",
+    "name": "swarmer zombie",
+    "description": "A normal humanoid body, almost in its decaying state. It seems to know how \"teamwork\" is done as it moves simultaneously with other swarmers as a pack.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 8,
+    "size": "MEDIUM",
+    "hp": 80,
+    "speed": 90,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 18
+      },
+      [ "GRAB", 48 ],
+      [ "scratch", 45 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 10,
+      "into_group": "GROUP_SWARMER3_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_vigor",
+    "type": "MONSTER",
+    "name": "vigor swarmer zombie",
+    "description": "A somewhat tranfigured body resulted from crammed up muscle growth hinders under its ripped clothing. Its twitchy face sure denotes eagerness to kill someone with its blunt, bare hands.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 15,
+    "size": "MEDIUM",
+    "hp": 105,
+    "speed": 85,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "green_white",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 5,
+    "melee_dice": 4,
+    "melee_dice_sides": 5,
+    "melee_cut": 0,
+    "armor_cut": 5,
+    "armor_bash": 3,
+    "armor_stab": 4,
+    "special_attacks": [
+      [ "GRAB", 50 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 10,
+      "into_group": "GROUP_SWARMER3_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_shrill",
+    "type": "MONSTER",
+    "name": "shrilling swarmer zombie",
+    "description": "Horridly mutated chest, with rotten lungs exposed to air. This girl's circular mouth lets out an extremely loud screeching sound!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 16,
+    "size": "MEDIUM",
+    "hp": 55,
+    "speed": 55,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "green_cyan",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 1,
+    "armor_cut": 2,
+    "armor_bash": 4,
+    "armor_stab": 2,
+    "starting_ammo": { "shrillvoice": 999 },
+    "special_attacks": [
+      [ "SHRIEK", 30 ],
+      [ "swarmshrill_shrill", 50 ],    
+  {
+        "type": "gun",
+        "//": "This attack's purpose is to call more enemies, not player damage (maybe just the ear).",
+        "cooldown": 25,
+        "move_cost": 100,
+        "gun_type": "shrillmouth",
+        "ammo_type": "shrillvoice",
+        "fake_skills": [ [ "gun", 1 ] ],
+        "max_ammo": 999,
+        "ranges": [ [ 1, 30, "DEFAULT" ] ],
+        "targeting_cost": 100,
+        "targeting_sound": "deep breath!",
+        "targeting_volume": 25,
+        "description": "A shrill echos through the vicinity!",
+        "no_ammo_sound": "cough"
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 10,
+      "into_group": "GROUP_SWARMER3_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_mischievous",
+    "type": "MONSTER",
+    "name": "mischievous swarmer zombie",
+    "description": "Stupid ear-to-ear smile greets what it sees, and provokes them with tricks and taunts. Upclose, its face immediately frowns, then smiles back from afar.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 10,
+    "size": "SMALL",
+    "hp": 55,
+    "speed": 110,
+    "material": [ "flesh" ],
+    "symbol": "z",
+    "color": "green_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "melee_cut": 3,
+    "armor_cut": 2,
+    "armor_bash": 1,
+    "armor_stab": 2,
+    "dodge": 4,
+    "starting_ammo": { "throwing_knife": 10 },
+    "special_attacks": [
+      [ "scratch", 12 ],
+      [ "BRANDISH", 20 ]
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "default_zombie_clothes", 100 ],
+        [ "child_items", 65 ]
+      ]
+    },
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 10,
+      "into_group": "GROUP_SWARMER3_UPGRADE"
+     },
+    "flags": [ "SEES", "HIT_AND_RUN", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GUILT" ]
+  },
+  
+  
+  
+  {
+    "//": "Tier 4 are the near high-end zombies, and lets say they are oddly mutated enough to comprehend with their skills effectively.",
+    "//": "Normal swarmers now go on two upgrade branch: aggro type - hungry and support type - unified.",
+    "id": "mon_zombie_swarmer_evo_hungry",
+    "type": "MONSTER",
+    "name": "hungry swarmer zombie",
+    "description": "Defiled from fleshy excitement, it will do anything just to eat more and feast along with its \"team\".",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 12,
+    "size": "MEDIUM",
+    "hp": 95,
+    "speed": 95,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_gray_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 15
+      },
+      [ "GRAB", 59 ],
+      [ "scratch", 50 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 11,
+      "into": "mon_zombie_swarmer_evo_starving"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+  },
+  {
+    "//": "This is a support swarmer zombie, and its purpose is to slow and try to immobilize the player. Not a damage-based monster, but needed to apply troublesome effects.",
+    "id": "mon_zombie_swarmer_evo_unify",
+    "type": "MONSTER",
+    "name": "unified swarmer zombie",
+    "description": "A severely mutated human body managed to multiply its filthy blood into a thick substance, visually seen on its bloated, green veins. Too obsess to assist its \"team\", as you only see is a smooth smile eager to come closer, with amalgous, beating fleshy material from both hands.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE" ],
+    "diff": 16,
+    "size": "MEDIUM",
+    "hp": 65,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "attack_effs": [
+        {
+            "id": "unify_bloodslow",
+            "duration": 60,
+            "chance": 25
+        }
+    ],
+    "symbol": "Z",
+    "color": "magenta",
+    "aggression": 10,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 4,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "armor_bash": 2,
+    "armor_cut": 3,
+    "armor_stab": 2,
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED" ],
+    "fear_triggers": [ "HURT" ],
+    "upgrades":
+     {
+      "half_life": 11,
+      "into": "mon_zombie_swarmer_evo_unity"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_rugged",
+    "type": "MONSTER",
+    "name": "rugged swarmer zombie",
+    "description": "Completely deformed skin shows excess muscular tissues all over its body, heavily suffered by its own weight, but physical blows will prove effectiveness.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 26,
+    "size": "MEDIUM",
+    "hp": 130,
+    "speed": 75,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_gray_white",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 5,
+    "melee_dice": 5,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "armor_cut": 6,
+    "armor_bash": 2,
+    "armor_stab": 6,
+    "special_attacks": [
+      [ "GRAB", 50 ],
+      [ "SMASH", 73 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 11,
+      "into_group": "GROUP_SWARMER4_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "PUSH_MON" ]
+  },
+  {
+    "//": "No more screamers or shrillers, but will still do the 'SHRIEK' skill.",
+    "//": "Aside that, this is a summoner type swarmer zombie, and without a descent armor, you'll sure be in trouble!",
+    "id": "mon_zombie_swarmer_grubby",
+    "type": "MONSTER",
+    "name": "grubby swarmer zombie",
+    "description": "Anatomy breakdown, foul shrouding stench, and giant worm-filled pus is unpredictably unpleasant to look at. Much horrible is, the parasites living inside it bursts out upon sensing a lively host!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 24,
+    "size": "MEDIUM",
+    "hp": 70,
+    "speed": 65,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "yellow_cyan",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 2,
+    "armor_cut": 2,
+    "armor_bash": 4,
+    "armor_stab": 4,
+    "vision_day": 20,
+    "starting_ammo": { "pus_wormstomach": 10, "pus_wormmove": 10, "pus_wormint": 10, "pus_wormpain": 10 },
+    "path_settings": { "max_dist": 20 },
+    "special_attacks": [
+      [ "SHRIEK", 30 ],
+      [ "GRENADIER", 25 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 11,
+      "into_group": "GROUP_SWARMER4_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_lick",
+    "//": "Hehe, I know its out of the picture. just keep up with the odd mutation.",
+    "type": "MONSTER",
+    "name": "licker swarmer zombie",
+    "description": "A mouthless zombie, with slender long tongue coming out from it. Its small body makes it agile, and will crawl to and try to subdue anything until the target befalls from its claws.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 15,
+    "size": "SMALL",
+    "hp": 70,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "z",
+    "color": "pink_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "armor_cut": 4,
+    "armor_bash": 2,
+    "armor_stab": 4,
+    "dodge": 5,
+    "special_attacks": [
+      [ "scratch", 6 ],
+      [ "GRAB", 10 ],
+      [ "LUNGE", 20 ],
+      { "type": "leap", "allow_no_target": false, "cooldown": 10, "max_range": 5 }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "default_zombie_clothes", 100 ],
+        [ "child_items", 65 ]
+      ]
+    },
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 11,
+      "into_group": "GROUP_SWARMER4_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ],
+    "//": "No guilt, because this is a mutant kid. Survivors would be stupid caring about it."
+ },
+ 
+ 
+ 
+ {
+    "//": "Tier 5, high-end zombies. Rather challenging at this point. Frantic mutations is not common to these guys... Just a way going to end-game branches...",
+    "id": "mon_zombie_swarmer_evo_starving",
+    "type": "MONSTER",
+    "name": "starving swarmer zombie",
+    "description": "Further excitement to sate its hunger gave itself a boost to muscle tension, affecting its physical strenght and speed, regardless of its heavily decayed state and flimsy limbs. Acts differently with its \"team\".",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 16,
+    "size": "MEDIUM",
+    "hp": 110,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "dark_gray_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
+    "melee_cut": 4,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 14
+      },
+      [ "GRAB", 50 ],
+      [ "scratch", 45 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 12,
+      "into_group": "GROUP_EZTARVING_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "GRABS" ]
+  },
+  {
+    "//": "Damn... If only the 'THING' death function is modifiable, this could look great (instead for example: killing it from afar will spawn the rebirthed monster BESIDE YOU).",
+    "id": "mon_zombie_swarmer_evo_unity",
+    "type": "MONSTER",
+    "name": "united swarmer zombie",
+    "description": "From head down to its feet, this zombie's blood veins rapidly creates thick blood that forms an external layer, both used for aggresion and defensiveness. But the thing that catches your attention is the amalgous beating object on its chest.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE" ],
+    "diff": 20,
+    "size": "MEDIUM",
+    "hp": 80,
+    "speed": 75,
+    "material": [ "flesh" ],
+    "attack_effs": [
+        {
+            "id": "unity_bloodslow",
+            "duration": 120
+        }
+    ],
+    "symbol": "Z",
+    "color": "pink",
+    "aggression": 10,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "armor_cut": 5,
+    "armor_bash": 10,
+    "armor_stab": 5,
+    "attack_cost": 250,
+    "starting_ammo": { "bloodvessel": 1 },
+    "//": "slow attack speed, so don't worry.",
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "DETONATE" ],
+    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED" ],
+    "fear_triggers": [ "HURT" ],
+    "upgrades":
+     {
+      "half_life": 12,
+      "into_group": "GROUP_EZNITY_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "PLASTIC" ]
+  },
+  {
+    "//": "Weakened thug. Will withdraw on end-game",
+    "id": "mon_zombie_swarmer_scraped",
+    "type": "MONSTER",
+    "name": "scraped swarmer zombie",
+    "description": "From prolonged mutation, this once bulged zombie is now under decaying state. But instead of weakening, the skin roughly solidifies and shaped irregularly into spikes.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 26,
+    "size": "LARGE",
+    "hp": 155,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "dark_gray_white",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "armor_cut": 11,
+    "armor_bash": 8,
+    "armor_stab": 8,
+    "special_attacks": [
+      [ "GRAB", 40 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 12,
+      "into_group": "GROUP_EZCRAPED_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_slimy",
+    "type": "MONSTER",
+    "name": "slimy swarmer zombie",
+    "description": "Fortified by blobs and worms infused inside its skinless body, this zombie can still drift on its feet, as you see how severe these parasites affect the undead host. With slimy liquid dripping from holes, the parasites can \"swim\" faster through it!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 32,
+    "size": "MEDIUM",
+    "hp": 75,
+    "speed": 70,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "cyan_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "armor_cut": 3,
+    "armor_bash": 5,
+    "armor_stab": 4,
+    "vision_day": 25,
+    "starting_ammo": { "pus_wormstomach": 20, "pus_wormmove": 20, "pus_wormint": 20, "pus_wormpain": 20 },
+    "path_settings": { "max_dist": 20 },
+    "special_attacks": [
+      [ "GRENADIER", 15 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 12,
+      "into_group": "GROUP_EZLIMY_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_slick",
+    "type": "MONSTER",
+    "name": "slicker swarmer zombie",
+    "description": "A licker mutant child filled in slimy contaminants, with freedom to chase twice faster than a regular zombie. Claws became longer, and can strip off normal clothes and flesh!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 20,
+    "size": "SMALL",
+    "hp": 85,
+    "speed": 140,
+    "material": [ "flesh" ],
+    "symbol": "z",
+    "color": "pink",
+    "attack_cost": 100,
+    "//": "Prevents barraging attacks on player.",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 4,
+    "melee_cut": 5,
+    "armor_cut": 4,
+    "armor_bash": 6,
+    "armor_stab": 4,
+    "dodge": 5,
+    "special_attacks": [
+      [ "scratch", 5 ],
+      [ "GRAB", 15 ],
+      [ "LUNGE", 25 ],
+      { "type": "leap", "allow_no_target": false, "cooldown": 15, "max_range": 5 }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "default_zombie_clothes", 100 ],
+        [ "child_items", 65 ]
+      ]
+    },
+    "death_function": [ "NORMAL" ],
+    "upgrades":
+     {
+      "half_life": 12,
+      "into_group": "GROUP_EZLICK_UPGRADE"
+     },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+ },
+ 
+ 
+ 
+ {
+    "//": "End. Going into this part ends all upgrade branches.",
+    "//": "3 deadliest counterparts of the starving zombie.",
+    "id": "mon_zombie_swarmer_evo_savage",
+    "type": "MONSTER",
+    "name": "savage swarmer zombie",
+    "description": "gray-ish visage in misunderstandable expression, this zombie has gone feral with extreme twitching of its head. Although it possesses a regular body, there's something wrong with it.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 20,
+    "size": "MEDIUM",
+    "hp": 135,
+    "speed": 105,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "black_yellow",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 15
+      },
+      [ "scratch", 35 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_evo_virulent",
+    "type": "MONSTER",
+    "name": "virulent swarmer zombie",
+    "description": "A greenish scourge with significant lust upon living flesh. It rather bite its \"team\" when nothing edible insight, but seeing one brings this weirdo into a ferocious berserk, gnawing the air as it chase down the target!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 23,
+    "size": "MEDIUM",
+    "hp": 125,
+    "speed": 110,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "magenta_green",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 8
+      },
+      [ "scratch", 43 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "ATTACKMON", "PUSH_MON" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_evo_skilled",
+    "type": "MONSTER",
+    "name": "skilled swarmer zombie",
+    "description": "Unlike others, this zombie's mind recalled all of its special practices while it was alive, and used it to aid with the \"team\". Able to speak, but slang and usually tells unrelated things.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 25,
+    "size": "MEDIUM",
+    "hp": 100,
+    "speed": 105,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_green_white",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "dodge": 5,
+    "special_attacks": [
+      [ "PARROT", 25 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "REGEN_MORALE" ]
+  },
+  {
+    "//": "The usual supports: resurrector and upgrader. No more slowing zombie support!",
+    "id": "mon_zombie_swarmer_evo_resurrector",
+    "type": "MONSTER",
+    "name": "resurrector swarmer zombie",
+    "description": "A primal blackened zombie that resuscitates fallen corpses. Much like a regular one, only differs in natural defensive skin.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE" ],
+    "diff": 20,
+    "size": "MEDIUM",
+    "hp": 90,
+    "speed": 75,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "dark_gray",
+    "aggression": 10,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "armor_cut": 6,
+    "armor_bash": 4,
+    "armor_stab": 4,
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "path_settings": { "max_dist": 20 },
+    "special_attacks": [ [ "RESURRECT", 0 ] ],
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "PATH_AVOID_DANGER_1", "PRIORITIZE_TARGETS" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_evo_ascension",
+    "type": "MONSTER",
+    "name": "ascendant swarmer zombie",
+    "description": "Exposed brain and a stationary face, showing no real expression. This zombie lets its \"team\" elevate their lethality by the black mist it secretes out of its body.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE" ],
+    "diff": 20,
+    "size": "MEDIUM",
+    "hp": 110,
+    "speed": 85,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "pink",
+    "aggression": 10,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 4,
+    "armor_cut": 2,
+    "armor_bash": 3,
+    "armor_stab": 2,
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "path_settings": { "max_dist": 20 },
+    "special_attacks": [ [ "UPGRADE", 25 ] ],
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "PATH_AVOID_DANGER_1", "PRIORITIZE_TARGETS" ]
+  },
+  {
+    "//": "2 hulk-like thugs upgrade! Less spawning, ofcourse.",
+    "//": "This one's defensive.",
+    "id": "mon_zombie_swarmer_metalwreck",
+    "type": "MONSTER",
+    "name": "metalwrecked swarmer zombie",
+    "description": "Ceased to decay, this flimsy zombie turned out with a larger muscle mass and an ease to carry it. It has metal scraps stuck on its skin, by accidental as seen on irregularity at random intervals throughout its body.",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 40,
+    "size": "LARGE",
+    "hp": 140,
+    "speed": 75,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_gray_green",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "armor_cut": 13,
+    "armor_bash": 10,
+    "armor_stab": 11,
+    "special_attacks": [
+      [ "GRAB", 50 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "PUSH_MON" ]
+  },
+  {
+    "//": "This one's offensive, obvious?",
+    "id": "mon_zombie_swarmer_excruciating",
+    "type": "MONSTER",
+    "name": "excruciating swarmer zombie",
+    "description": "A disastrous, swollen gargantuan, raging to bash with its blunt, huge fists!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 65,
+    "size": "HUGE",
+    "hp": 190,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_gray_magenta",
+    "attack_cost": 125,
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 10,
+    "melee_cut": 0,
+    "armor_cut": 4,
+    "armor_bash": 2,
+    "armor_stab": 2,
+    "special_attacks": [
+      [ "SMASH", 35 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "PUSH_MON" ]
+  },
+  {
+    "//": "No more summoner, end-game needs to be offensive.",
+    "id": "mon_zombie_swarmer_slender",
+    "type": "MONSTER",
+    "name": "slender swarmer zombie",
+    "description": "A partial boneless zombie, as it moves like a snake. Its extreme fragility makes it conscious to take an injury, and superior as an agile biter!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 25,
+    "size": "MEDIUM",
+    "hp": 30,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "light_blue",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 2,
+    "melee_cut": 4,
+    "dodge": 8,
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5, "min_mul": 0.5,
+        "damage_max_instance": [
+          { "damage_type": "cut", "amount": 15, "armor_multiplier": 1.0 }
+        ]
+      }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HIT_AND_RUN", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "HARDTOSHOOT" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_tenacious",
+    "type": "MONSTER",
+    "name": "tenacious swarmer zombie",
+    "description": "A vivid, gray zombie with its skin firmly compressed to the bones. Looks sick, but along with the various, indefinite sword claws, it may do something worse letting it beside you!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 25,
+    "size": "MEDIUM",
+    "hp": 80,
+    "speed": 90,
+    "material": [ "flesh" ],
+    "symbol": "Z",
+    "color": "blue",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 2,
+    "melee_cut": 4,
+    "armor_cut": 3,
+    "armor_bash": 5,
+    "armor_stab": 4,
+    "vision_day": 30,
+    "attack_cost": 500,
+    "melee_damage": [
+      {
+        "damage_type": "cut",
+        "amount": 20
+     }
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HIT_AND_RUN", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS", "HARDTOSHOOT" ]
+  },
+  {
+    "id": "mon_zombie_swarmer_pestilent",
+    "type": "MONSTER",
+    "name": "pestilent swarmer zombie",
+    "description": "A twisted anomalous body forged with dirty sharp claws. Seems to move pathetic, as it stumbles on its feet more often, but does random acrobatic feats upclose!",
+    "default_faction": "zombie",
+    "categories": [ "CLASSIC" ],
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 20,
+    "size": "SMALL",
+    "hp": 90,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "z",
+    "color": "magenta",
+    "aggression": 50,
+    "morale": 50,
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 2,
+    "melee_cut": 6,
+    "armor_cut": 4,
+    "armor_bash": 6,
+    "armor_stab": 4,
+    "dodge": 3,
+    "special_attacks": [
+      [ "scratch", 6 ],
+      { "type": "leap", "cooldown": 2, "max_range": 3 }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "default_zombie_clothes", 100 ],
+        [ "child_items", 65 ]
+      ]
+    },
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "GROUP_MORALE", "SWARMS" ]
+ }
+]

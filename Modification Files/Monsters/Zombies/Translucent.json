@@ -1,0 +1,121 @@
+[
+ {
+    "id": "mon_zombie_translucent",
+    "type": "MONSTER",
+    "name": "translucent zombie",
+    "description": "A human body, with its stomach enlarged, glowing in serene green-ish yellow light. Almost transparent, and actually an acid depot, disposing excess amount as it walks.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 12,
+    "size": "MEDIUM",
+    "hp": 70,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "g",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_cut": 1,
+    "dodge": 1,
+    "luminance": 5,
+    "melee_damage": [
+      {
+        "damage_type": "acid",
+        "amount": 3
+      }
+    ],
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "armor_fire": 1,
+    "emit_fields": [ "secro_transluncent_acid" ],
+    "special_attacks": [ [ "ACID_BARF", 30 ] ],
+    "death_drops": "default_zombie_death_drops",
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_TRANSLUCENT_UPGRADE"
+    },
+    "anger_triggers": [ "PLAYER_CLOSE" ],
+    "death_function": [ "ACID", "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "ACIDPROOF", "ACID_BLOOD", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
+  },
+  {
+    "id": "mon_zombie_pellucid",
+    "type": "MONSTER",
+    "name": "pellucid zombie",
+    "description": "Unrecognizable face dribbles with unfriendly liquid. This zombie's skin thinned into a diversion of light, supposably an effect from acid reflux as it ages further. Within a closer look, you'll see its vein compose mostly of yellow-ish glows.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 25,
+    "size": "MEDIUM",
+    "hp": 90,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "g",
+    "color": "blue_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "melee_cut": 1,
+    "dodge": 1,
+    "melee_damage": [
+      {
+        "damage_type": "acid",
+        "amount": 5
+      }
+    ],
+    "luminance": 1,
+    "armor_bash": 3,
+    "armor_cut": 1,
+    "armor_fire": 2,
+    "special_attacks": [ [ "ACID_BARF", 30 ], [ "ACID", 25 ] ],
+    "special_when_hit": [ "ACIDSPLASH", 25 ],
+    "death_drops": "default_zombie_death_drops",
+    "anger_triggers": [ "PLAYER_CLOSE" ],
+    "death_function": [ "ACID" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "ACIDPROOF", "ACID_BLOOD", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
+  },
+  {
+    "id": "mon_zombie_distended",
+    "type": "MONSTER",
+    "name": "distended zombie",
+    "description": "Thick, bloated portion dominates its entire abdominal and torsal part, but can still walk to its target. Intense glow pulsates in dark, yellow light, notifying anyone clever enough to know its about to explode from taking a slight injury.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 25,
+    "size": "MEDIUM",
+    "hp": 35,
+    "speed": 85,
+    "material": [ "flesh" ],
+    "symbol": "g",
+    "color": "blue_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "melee_damage": [
+      {
+        "damage_type": "acid",
+        "amount": 4
+      }
+    ],
+    "luminance": 15,
+    "armor_bash": 2,
+    "armor_cut": 4,
+    "armor_fire": 10,
+    "starting_ammo": { "distendacidboom": 1 },
+    "special_attacks": [ [ "ACID_BARF", 15 ], [ "SUICIDE", 50 ] ],
+    "special_when_hit": [ "ACIDSPLASH", 100 ],
+    "death_drops": "default_zombie_death_drops",
+    "anger_triggers": [ "PLAYER_CLOSE" ],
+    "emit_fields": [ "secro_distended_acid" ],
+    "death_function": [ "ACID", "DETONATE" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "ACIDPROOF", "ACID_BLOOD", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "ELECTRIC" ]
+  }
+]

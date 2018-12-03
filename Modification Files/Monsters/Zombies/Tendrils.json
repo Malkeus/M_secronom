@@ -1,0 +1,153 @@
+[
+ {
+    "id": "mon_zombie_tendrils",
+    "type": "MONSTER",
+    "name": "tendril zombie",
+    "description": "A human body with two twitching tentacles and stem-like outgrowth slits through the worn tattered clothing, notably improved its balance as it walks.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 12,
+    "size": "MEDIUM",
+    "hp": 75,
+    "speed": 115,
+    "material": [ "flesh" ],
+    "symbol": "k",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 1,
+    "dodge": 1,
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 4
+      }
+    ],
+    "vision_night": 5,
+    "armor_bash": 3,
+    "armor_cut": 1,
+    "armor_acid": 1,
+    "armor_fire": 1,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 9,
+        "armor_penetration": 10
+      },
+      [ "STRETCH_ATTACK", 20 ],
+      [ "tendrilgrip", 35 ],
+      [ "tendrilslam", 28 ],
+      [ "tendrilswing", 3 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "upgrades": {
+      "half_life": 10,
+      "into_group": "GROUP_TENDRILS_UPGRADE"
+    },
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
+  },
+  {
+    "id": "mon_zombie_thicktendrils",
+    "type": "MONSTER",
+    "name": "thick tendril zombie",
+    "description": "A larger pair of tendrils touches the ground, covered with smaller tentacles, wriggling without a pause. Heavier, slower and resilient to harm as it stumbles more often on its way.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 19,
+    "size": "MEDIUM",
+    "hp": 130,
+    "speed": 85,
+    "material": [ "flesh" ],
+    "symbol": "K",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
+    "melee_cut": 1,
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 6
+      },
+      {
+        "damage_type": "stab",
+        "amount": 2
+      }
+    ],
+    "armor_bash": 8,
+    "armor_cut": 4,
+    "armor_acid": 3,
+    "armor_fire": 2,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 11,
+        "armor_penetration": 16
+      },
+      [ "tendrilswing", 9 ],
+      [ "tendrilgrip", 24 ],
+      [ "tendrilslam", 16 ],
+      [ "STRETCH_ATTACK", 25 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
+  },
+  {
+    "id": "mon_zombie_tendricles",
+    "type": "MONSTER",
+    "name": "tendricle zombie",
+    "description": "Raging tentacles cover this zombie's body, with shorter tendril pairs tipped with sharp bone.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 22,
+    "size": "MEDIUM",
+    "hp": 105,
+    "speed": 105,
+    "material": [ "flesh" ],
+    "symbol": "k",
+    "color": "light_gray",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 2,
+    "dodge": 1,
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 3
+      },
+      {
+        "damage_type": "stab",
+        "amount": 7
+      }
+    ],
+    "armor_bash": 6,
+    "armor_cut": 3,
+    "armor_acid": 1,
+    "armor_fire": 1,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 6,
+        "armor_penetration": 10
+      },
+      [ "tendrilswing", 2 ],
+      [ "tendrilslam", 20 ],
+      [ "tendrilgrip", 18 ],
+      [ "tendrilstab", 27 ],
+      [ "GRAB_DRAG", 10 ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "PUSH_MON" ]
+  }
+]

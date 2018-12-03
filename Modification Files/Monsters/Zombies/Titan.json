@@ -1,0 +1,85 @@
+[
+ {
+    "//": "This boss should path from brute zombie, and much like a hulk... Only difference is its armor and slight speed.",
+    "id": "mon_zombie_titan",
+    "type": "MONSTER",
+    "name": "titan zombie",
+    "description": "A swollen body covered with thick exoskeleton plates, lays under its bulging muscles.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 57,
+    "size": "HUGE",
+    "hp": 460,
+    "speed": 145,
+    "material": [ "flesh", "bone" ],
+    "symbol": "Z",
+    "color": "ltred_magenta",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 1,
+    "attack_cost": 200,
+    "dodge": 1,
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 9
+      }
+    ],
+    "armor_bash": 10,
+    "armor_cut": 16,
+    "armor_acid": 3,
+    "armor_fire": 5,
+    "special_attacks": [
+    [ "SMASH", 30 ]
+    ],
+    "death_drops": "mon_zombie_hulk_death_drops",
+    "upgrades": {
+      "half_life": 15,
+      "into_group": "GROUP_TITAN_UPGRADE"
+    },
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "DESTROYS", "POISON", "ATTACKMON", "LEATHER", "NO_BREATHE", "REVIVES", "BONES", "FAT", "PUSH_MON" ]
+  },
+    {
+    "//": "Extremely rare boss, it suppose to be that. Similar to tank, but much (literally) destructive enemy.",
+    "id": "mon_zombie_blacktitan",
+    "type": "MONSTER",
+    "name": "black titan zombie",
+    "description": "Enormous muscle mass, turned black from high-end mutations while its exoskeleton unified with the rotten skin, further improving its movement as well as its defensiveness.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE", "HUMAN" ],
+    "diff": 72,
+    "size": "HUGE",
+    "hp": 655,
+    "speed": 150,
+    "material": [ "flesh", "bone" ],
+    "symbol": "Z",
+    "color": "dark_gray_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "melee_cut": 1,
+    "attack_cost": 200,
+    "melee_damage": [
+      {
+        "damage_type": "bash",
+        "amount": 12
+      }
+    ],
+    "armor_bash": 14,
+    "armor_cut": 18,
+    "armor_acid": 4,
+    "armor_fire": 8,
+    "special_attacks": [
+    [ "SMASH", 40 ]
+    ],
+    "death_drops": "mon_zombie_hulk_death_drops",
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "DESTROYS", "POISON", "ATTACKMON", "LEATHER", "NO_BREATHE", "REVIVES", "BONES", "FAT", "PUSH_MON" ]
+  }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "type": "ammunition_type",
+        "id": "voice",
+        "name": "voice",
+        "default": "shrillvoice"
+    },  
+ {
+    "id": "shrillvoice",
+    "type": "AMMO",
+    "name": "shrilling voice",
+    "description": "The \"beautiful\" voice of a shrilling zombie, is now in your hands ^_^",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "ranged_damage": 0,
+    "pierce": 5,
+    "dispersion": 100,
+    "material": [ "flesh" ],
+    "symbol": ".",
+    "color": "green",
+    "ammo_type": "voice"
+  },
+ {
+    "id": "distendacidboom",
+    "type": "TOOL",
+    "name": "distended acid belly",
+    "description": "A filthy belly.",
+    "weight": 5427,
+    "volume": 24,
+    "price": 0,
+    "material": [ "flesh" ],
+    "symbol": ".",
+    "color": "green",
+    "use_action": {
+      "target": "distendacidboomact",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    }
+  },
+{
+    "id": "distendacidboomact",
+    "type": "TOOL",
+    "name": "distended acid belly",
+    "description": "The about-to-explode filthy belly of distended zombie. Looks like a sac filled with yellowish liquid, but can you throw it away safely?",
+    "weight": 2113,
+    "volume": 10,
+    "price": 0,
+    "material": "flesh",
+    "symbol": ".",
+    "color": "green",
+    "count": 1,
+    "stack_size": 1,
+    
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_acid",
+      "fields_radius": 3,
+      "fields_min_density": 1,
+      "fields_max_density": 3,
+      "sound_volume": 0,
+      "sound_msg": "gurgling belly!",
+      "no_deactivate_msg": "And how?"
+     }
+    },
+    {
+        "type" : "TOOL",
+        "id" : "pus_wormpain",
+        "name" : "pus",
+        "weight" : 110,
+        "color" : "green",
+        "symbol" : "o",
+        "description" : "a pus, wriggles with parasites.",
+        "price" : 0,
+        "material" : "flesh",
+        "volume" : 1,
+        "flags": [ "NO_DROP" ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_insect_parasiteworm_pain",
+      "difficulty": 100,
+      "friendly_msg": "It shouldn't happened!",
+      "hostile_msg": "The parasite starts to motion!",
+      "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+    },
+    {
+        "type" : "TOOL",
+        "id" : "pus_wormint",
+        "name" : "pus",
+        "weight" : 110,
+        "color" : "green",
+        "symbol" : "o",
+        "description" : "a pus, wriggles with parasites.",
+        "price" : 0,
+        "material" : "flesh",
+        "volume" : 1,
+        "flags": [ "NO_DROP" ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_insect_parasiteworm_int",
+      "difficulty": 100,
+      "friendly_msg": "It shouldn't happened!",
+      "hostile_msg": "The parasite starts to motion!",
+      "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+    },
+    {
+        "type" : "TOOL",
+        "id" : "pus_wormmove",
+        "name" : "pus",
+        "weight" : 110,
+        "color" : "green",
+        "symbol" : "o",
+        "description" : "a pus, wriggles with parasites.",
+        "price" : 0,
+        "material" : "flesh",
+        "volume" : 1,
+        "flags": [ "NO_DROP" ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_insect_parasiteworm_move",
+      "difficulty": 100,
+      "friendly_msg": "It shouldn't happened!",
+      "hostile_msg": "The parasite starts to motion!",
+      "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+    },
+    {
+        "type" : "TOOL",
+        "id" : "pus_wormstomach",
+        "name" : "pus",
+        "zipweight" : 110,
+        "color" : "green",
+        "symbol" : "o",
+        "description" : "a pus, wriggles with parasites.",
+        "price" : 0,
+        "material" : "flesh",
+        "volume" : 1,
+        "flags": [ "NO_DROP" ],
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_insect_parasiteworm_stomach",
+      "difficulty": 100,
+      "friendly_msg": "It shouldn't happened!",
+      "hostile_msg": "The parasite starts to motion!",
+      "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+    },
+    {
+        "type" : "TOOL",
+        "id" : "bloodvessel",
+        "name" : "blood vessel",
+        "weight" : 2000,
+        "color" : "light_red",
+        "symbol" : "*",
+        "description" : "\"reeeeeeeeeeeeeeEEEEEEE\".",
+        "price" : 0,
+        "material" : "flesh",
+        "volume" : 10,
+    "use_action": {
+      "target": "bloodvesselact",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    }
+    },
+    {
+        "type" : "TOOL",
+        "id" : "bloodvesselact",
+        "name" : "blood vessel",
+        "weight" : 2000,
+        "color" : "light_red",
+        "symbol" : "*",
+        "description" : "\"reeeeeeeeeeeeeeEEEEEEE... KEEKEEEEKEEEEEEE\".",
+        "price" : 0,
+        "material" : "flesh",
+        "volume" : 10,
+        "initial_charges": 1,
+      "turns_per_charge": 1,
+    "max_charges": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zombie_bloodvessel",
+      "difficulty": 1000,
+      "friendly_msg": "It shouldn't happened!",
+      "hostile_msg": "Bloody object(s) thrusts toward you!",
+      "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+    }
+]

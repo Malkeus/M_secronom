@@ -1,0 +1,26 @@
+[
+ {
+    "id": "secro_unifyblood_explode",
+    "type": "emit",
+    "field": "fd_blood",
+    "density": 3,
+    "quantity": 100,
+    "chance": 100
+  },
+ {
+    "id": "secro_transluncent_acid",
+    "type": "emit",
+    "field": "fd_acid",
+    "density": 1,
+    "quantity": 10,
+    "chance": 100
+  },
+  {
+    "id": "secro_distended_acid",
+    "type": "emit",
+    "field": "fd_acid",
+    "density": 1,
+    "quantity": 20,
+    "chance": 100
+  }
+]
